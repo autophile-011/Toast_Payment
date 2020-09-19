@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(20, 19, 19);
+}
+button{
+    margin-top: 280px;
+    margin-left: 36%;
+    border: none;
+}
+button#toast-button{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    color: #ffffff;
+
+    background: #f12b38;
+    padding: 1.2rem 2.4rem;
+    border-radius: 3px ;
+    transition: opacity .2s;
+}
+button#toast-button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+#toast-massage{
+    position: fixed;
+    bottom: -8rem;
+
+    user-select: none;
+    color: #f12b38;
+    background: #000000;
+
+    padding: 1.2rem 2.4rem;
+    border-radius: 3px;
+    box-shadow: 3px 6px 12px rgba(0, 0, 0, .4);
+
+    transition: button .4s ease;
+}
+
+#toast-massage.show{
+    bottom: 45%;
+    left: 35%;
+}
